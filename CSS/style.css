@@ -6,6 +6,93 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+:root {
+    --color-bg: #110327;
+    --color-card: #1b063e;
+    --color-h: #1adb1a;
+    --color-txt: #eee;
+    --color-input: #2d253d;
+    --color-button: #19f319;
+    --color-btnText: #c3c2c2;
+    --color-boxCard: #0e0521;
+}
+
 body {
-    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 200px;
+    background-color: var(--color-bg);
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.align {
+    display: flex;
+    flex-direction: column;
+}
+
+#card h2 {
+    color: var(--color-h);
+}
+
+#card label {
+    color: var(--color-txt);
+}
+
+#card input {
+    min-width: 300px;
+    min-height: 40px;
+    background-color: var(--color-input);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--color-txt);
+}
+
+#card button {
+    min-width: 300px;
+    min-height: 40px;
+    background-color: var(--color-button);
+    border: none;
+    outline: none;
+    color: var(--color-btnText);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px var(--color-button);
+}
+
+#left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-h);
+}
+
+#right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-card);
+    padding: 50px;
+    box-shadow: 20px 20px 80px 5px var(--color-boxCard);
 }
